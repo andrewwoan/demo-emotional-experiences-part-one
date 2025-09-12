@@ -12,8 +12,13 @@ This repo contains code of Daniel's [Award-Winning](https://www.cssdesignawards.
 
 # Credits!!! 💖
 
-- [First Scene Inspiration](hhttps://www.artstation.com/artwork/vbZaaE)
+- [Character Fan Art from Miffy Universe](https://www.miffy.com/)
+- [Character Fan Art from Pusheen Universe](https://pusheen.com/)
+- [First Scene Inspiration](https://www.artstation.com/artwork/vbZaaE)
+- [First Scene Music](https://www.youtube.com/watch?v=RmUWWVZw28E)
+- [Second Scene Music](https://www.youtube.com/watch?v=EYGGd2NKwtI)
 - [Second Scene Inspiration](https://sketchfab.com/3d-models/frog-tamagotchi-189255a48e2b40a1b425877c673cd6a2)
+- [Third Scene Music](https://www.youtube.com/watch?v=BuYf0taXoNw)
 - [Third Scene Paper Textures](https://superhivemarket.com/products/crafty-asset-pack)
 - [Third Scene Paper Custom Art with Figma](https://www.figma.com/design/ySFyeZczRCxJLLOfqj2dWt/Demo-Emotional-Experiences-for-Codrops?node-id=0-1&t=e2r55U1RYTDiKmIi-1)
 - [Wood Texture](https://www.artstation.com/marketplace/p/Nw8nd/blender-smart-material-wood)
