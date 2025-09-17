@@ -1,8 +1,6 @@
 # Demo Emotional Experiences for Codrops
 
-**[Live site](https://daniels-architects.com/)**
-
-This repo contains code of Daniel's [Award-Winning](https://www.cssdesignawards.com/sites/daniels-architects/47206/)
+This repo contains code of Demo Emotional Experiences for Codrops [Live Site](https://demo-emotional-experiences-part-one.vercel.app/)
 
 ![Page screenshot](public/media/og-image.webp?raw=true "Page screenshot")
 
