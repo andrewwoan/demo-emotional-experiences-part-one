@@ -1,6 +1,6 @@
 # Demo Emotional Experiences for Codrops
 
-This repo contains code of Demo Emotional Experiences for Codrops [Live Site](https://demo-emotional-experiences-part-one.vercel.app/)
+This repo contains code of Demo Emotional Experiences for Codrops [Live Site](https://demo-emotional-experiences-part-one.vercel.app/). This is mainly reused code and vibe coded haha, do not look for code accuracy.
 
 ![Page screenshot](public/media/og-image.webp?raw=true "Page screenshot")
 
