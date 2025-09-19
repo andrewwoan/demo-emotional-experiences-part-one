@@ -320,8 +320,6 @@ const Scene = ({
         lerpFactor
       );
 
-      console.log(targetScrollProgress);
-
       if (newProgress >= 1) {
         newProgress = 0;
         targetScrollProgress.current = 0;
@@ -331,7 +329,6 @@ const Scene = ({
         if (newFolder !== currentCubemapFolder) {
           setCurrentCubemapFolder(newFolder);
         }
-        console.log(`Entering loop ${newLoopCounter}`);
       } else if (newProgress < 0) {
         newProgress = 1;
         targetScrollProgress.current = 1;
@@ -341,7 +338,6 @@ const Scene = ({
         if (newFolder !== currentCubemapFolder) {
           setCurrentCubemapFolder(newFolder);
         }
-        console.log(`Entering loop ${newLoopCounter}`);
       }
 
       setscrollProgress(newProgress);
