@@ -26,3 +26,4 @@ This repo contains code of Demo Emotional Experiences for Codrops [Live Site](ht
 - [Xianyao Wei, friend who helped with idea generation](https://weisdevice.xyz/)
 - [Ning Huang, friend who helped with idea generation](https://ning-h.com/)
 - [Evelyn Hsiao, friend who helped with idea generation](https://www.evelynhsiao.dev/)
+- [Seagull inspo](https://www.shutterstock.com/search/cute-seagull-bird)
