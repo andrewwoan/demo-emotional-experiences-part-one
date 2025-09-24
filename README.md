@@ -12,8 +12,8 @@ This repo contains code of Demo Emotional Experiences for Codrops [Live Site](ht
 
 - [Character Fan Art from Miffy Universe](https://www.miffy.com/)
 - [Character Fan Art from Pusheen Universe](https://pusheen.com/)
-- [First Scene Inspiration by Denis Wipart](https://www.artstation.com/artwork/vbZaaE)
 - [First Scene Music](https://www.youtube.com/watch?v=RmUWWVZw28E)
+- [First Scene Inspiration by Denis Wipart](https://www.artstation.com/artwork/vbZaaE)
 - [Second Scene Music](https://www.youtube.com/watch?v=EYGGd2NKwtI)
 - [Second Scene Inspiration by Moon](https://sketchfab.com/3d-models/frog-tamagotchi-189255a48e2b40a1b425877c673cd6a2)
 - [Third Scene Music](https://www.youtube.com/watch?v=BuYf0taXoNw)
