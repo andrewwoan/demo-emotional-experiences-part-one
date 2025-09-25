@@ -21,8 +21,8 @@ const IOSNotSupported = () => {
       <div className="mobile-message">
         <h1>Sorry, this experience is not available on iOS devices</h1>
         <p>
-          Please access this experience from a desktop, laptop, or Android
-          device for the best performance.
+          I was too lazy to make this work on ios devices and it's not
+          responsive either lol.
         </p>
       </div>
     </div>
