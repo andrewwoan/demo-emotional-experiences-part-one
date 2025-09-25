@@ -2,6 +2,33 @@ import "./App.scss";
 import React, { useState, useEffect } from "react";
 import Experience from "./Experience/Experience";
 
+// iOS Detection Function (only block Apple devices)
+const isIOSDevice = () => {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Check for iOS devices only
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    return true;
+  }
+
+  return false;
+};
+
+// iOS Not Supported Component
+const IOSNotSupported = () => {
+  return (
+    <div className="mobile-not-supported">
+      <div className="mobile-message">
+        <h1>Sorry, this experience is not available on iOS devices</h1>
+        <p>
+          Please access this experience from a desktop, laptop, or Android
+          device for the best performance.
+        </p>
+      </div>
+    </div>
+  );
+};
+
 // Loading Screen Component
 const LoadingScreen = ({ onEnter }) => {
   const [progress, setProgress] = useState(0);
@@ -9,7 +36,7 @@ const LoadingScreen = ({ onEnter }) => {
 
   useEffect(() => {
     const startTime = Date.now();
-    const duration = 5000; // 6 seconds
+    const duration = 5000; // 5 seconds
 
     const updateProgress = () => {
       const elapsed = Date.now() - startTime;
@@ -65,11 +92,17 @@ const LoadingScreen = ({ onEnter }) => {
 function App() {
   const [hasEntered, setHasEntered] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(false);
+  const [isIOS] = useState(isIOSDevice());
 
   const handleEnter = (audioEnabled) => {
     setSoundEnabled(audioEnabled);
     setHasEntered(true);
   };
+
+  // If iOS device, show not supported message
+  if (isIOS) {
+    return <IOSNotSupported />;
+  }
 
   return (
     <>
