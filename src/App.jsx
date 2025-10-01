@@ -85,7 +85,7 @@ const LoadingScreen = ({ onEnter }) => {
           </div>
         )}
         <a
-          href="mylink.com"
+          href="https://github.com/andrewwoan/demo-emotional-experiences-part-one"
           className="credits-link"
           target="_blank"
           rel="noopener noreferrer"
