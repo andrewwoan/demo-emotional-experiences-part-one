@@ -5,7 +5,6 @@ import { Canvas } from "@react-three/fiber";
 import * as THREE from "three";
 
 import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
-import { useModalStore } from "../stores/useModalStore";
 import normalizeWheel from "normalize-wheel";
 
 const Experience = ({ soundEnabled = false }) => {
@@ -18,7 +17,6 @@ const Experience = ({ soundEnabled = false }) => {
   const isSwiping = useRef(false);
   const mousePositionOffset = useRef(new THREE.Vector3());
   const mouseRotationOffset = useRef(new THREE.Euler());
-  const { isModalOpen } = useModalStore();
   const lastTouchY = useRef(null);
 
   const showInfoModal = false;
@@ -51,7 +49,6 @@ const Experience = ({ soundEnabled = false }) => {
 
   useEffect(() => {
     const handleWheel = (e) => {
-      if (isModalOpen || showInfoModal) return;
       const normalized = normalizeWheel(e);
 
       targetScrollProgress.current +=
@@ -80,13 +77,12 @@ const Experience = ({ soundEnabled = false }) => {
     };
 
     const handleTouchStart = (e) => {
-      if (isModalOpen || showInfoModal) return;
       isSwiping.current = true;
       lastTouchY.current = e.touches[0].clientY;
     };
 
     const handleTouchMove = (e) => {
-      if (!isSwiping.current || showInfoModal) return;
+      if (!isSwiping.current) return;
 
       if (lastTouchY.current !== null) {
         const deltaY = e.touches[0].clientY - lastTouchY.current;
@@ -103,7 +99,7 @@ const Experience = ({ soundEnabled = false }) => {
     };
 
     const handleMouseDown = (e) => {
-      if (isModalOpen || showInfoModal || e.pointerType === "touch") return;
+      if (e.pointerType === "touch") return;
       isSwiping.current = true;
     };
 
@@ -146,7 +142,7 @@ const Experience = ({ soundEnabled = false }) => {
       window.removeEventListener("touchend", handleTouchEnd);
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isModalOpen, showInfoModal]);
+  }, []);
 
   return (
     <>

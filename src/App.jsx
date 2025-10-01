@@ -84,6 +84,23 @@ const LoadingScreen = ({ onEnter }) => {
             </div>
           </div>
         )}
+        <a
+          href="mylink.com"
+          className="credits-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "absolute",
+            left: "50%",
+            bottom: "15%",
+            transform: "translate(-50%, -50%)",
+            fontSize: "14px",
+            color: "#888",
+            // textDecoration: "none",
+          }}
+        >
+          See full list of credits here!!
+        </a>
       </div>
     </div>
   );
